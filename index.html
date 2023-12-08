@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CCL map</title>
+    <link rel="stylesheet" href="src/components/card/card.css" />
+    <link rel="stylesheet" href="src/components/list/list.css" />
+    <link rel="stylesheet" href="src/components/selector/selector.css" />
+    <link rel="stylesheet" href="src/components/crimes-list/crimes-list.css" />
+    <link rel="stylesheet" href="src/components/sidebar/sidebar.css" />
+    <link rel="stylesheet" href="src/css/index.css" />
+    <link rel="stylesheet" href="src/css/fonts.css" />
+    <link rel="stylesheet" href="src/css/colors.css" />
+  </head>
+  <body>
+    <section id="map-container">
+      <div id="map"></div>
+    </section>
+    
+    <nav>
+      <img
+        class="national-emblem"
+        src="src/assets/icons/national-emblem.svg"
+        alt="national emblem"
+      />
+      <button id="location-button">
+        <img src="src/assets/icons/location-orange.svg" alt="pin" />
+      </button>
+      <button id="list-button">
+        <img src="src/assets/icons/dots-burger-gray.svg" alt="list" />
+      </button>
+      <img
+        class="download"
+        src="src/assets/icons/download.svg"
+        alt="download"
+      />
+    </nav>
+
+    <button id="zoom-in">+</button>
+    <button id="zoom-out">-</button>
+
+    <sidebar-menu id="sidebar"></sidebar-menu>
+    <sidebar-list id="list"></sidebar-list>
+
+    <crimes-list></crimes-list>
+
+    <script type="module" src="/src/index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,5 @@
+::part(selector) {
+  border-radius: 30px;
+  border: 1px solid var(--lightGray);
+  padding: 12px;
+}

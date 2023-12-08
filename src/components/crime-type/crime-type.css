@@ -1,0 +1,22 @@
+crime-type {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+::part(name) {
+  font-family: 'eUkraine';
+  font-weight: 100;
+  font-size: 11px;
+  line-height: 16px;
+  max-width: 170px;
+  text-transform: lowercase;
+}
+
+::part(point) {
+  display: inline-block;
+  height: 12px;
+  min-width: 12px;
+  margin-right: 6px;
+  border-radius: 10px;
+}

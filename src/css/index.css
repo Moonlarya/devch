@@ -1,0 +1,89 @@
+body {
+  padding: 0;
+  margin: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 0.6) 100%
+  );
+}
+
+h2 {
+  line-height: 40px;
+  font-weight: 500;
+}
+
+#map {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.6) 0%,
+      rgba(0, 0, 0, 0) 20%,
+      rgba(0, 0, 0, 0) 80%,
+      rgba(0, 0, 0, 0.6) 100%
+    ),
+    url('../assets/Ukraine.svg');
+  background-position: center;
+  background-size: cover;
+  transform-origin: top left;
+}
+
+#map-container {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.6) 0%,
+    rgba(0, 0, 0, 0) 20%,
+    rgba(0, 0, 0, 0) 80%,
+    rgba(0, 0, 0, 0.6) 100%
+  );
+}
+
+#zoom-in,
+#zoom-out {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  width: 20px;
+  height: 20px;
+}
+
+#zoom-out {
+  top: 50px;
+}
+
+nav {
+  display: grid;
+  grid-template-rows: 5fr 1fr 1fr 5fr;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  padding: 20px 10px 32px;
+  box-sizing: border-box;
+  background-color: var(--black);
+}
+
+nav img {
+  cursor: pointer;
+  justify-self: center;
+}
+
+.national-emblem {
+  align-self: flex-start;
+}
+
+.download {
+  align-self: flex-end;
+}
+
+#list-button,
+#location-button {
+  border: none;
+  background-color: transparent;
+}

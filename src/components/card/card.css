@@ -1,0 +1,24 @@
+::part(card) {
+  background-color: var(--white);
+  border-radius: 5px;
+  border: 1px solid var(--lightGray);
+}
+
+::part(card-title) {
+  color: var(--black);
+  font-size: 16px;
+  line-height: 24px;
+}
+
+::part(label),
+::part(data) {
+  display: block;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 24px;
+  color: var(--darkGray);
+}
+
+::part(data) {
+  color: var(--black);
+}

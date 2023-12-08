@@ -1,0 +1,52 @@
+sidebar-menu {
+  background-color: var(--white);
+  font-family: 'eUkraine';
+  font-weight: 100;
+  font-size: 11px;
+  line-height: 16px;
+  position: fixed;
+  right: 0;
+  top: 0;
+  height: 100vh;
+  max-width: 490px;
+  width: 0px;
+  -webkit-transition: width 0.3s ease-in-out;
+  -moz-transition: width 0.3s ease-in-out;
+  -o-transition: width 0.3s ease-in-out;
+  transition: width 0.3s ease-in-out;
+}
+
+::part(checkbox-list) {
+  display: grid;
+}
+
+::part(search) {
+  padding: 30px 48px;
+  border-bottom: 1px solid var(--lightGray);
+}
+
+::part(h2) {
+  line-height: 40px;
+}
+
+::part(h3) {
+  line-height: 24px;
+}
+
+::part(search-input) {
+  border-radius: 30px;
+  border: 1px solid var(--lightGray);
+  padding: 12px;
+}
+
+::part(content) {
+  padding: 26px 48px 48px;
+}
+
+::part(results) {
+  display: inline-block;
+  height: 12px;
+  width: 12px;
+  margin-right: 6px;
+  border-radius: 10px;
+}

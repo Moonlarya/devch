@@ -1,0 +1,10 @@
+::part(crimes-list-wrapper) {
+  display: flex;
+  position: fixed;
+  bottom: 0;
+  left: 60px;
+  gap: 24px;
+  padding: 32px;
+  width: 100%;
+  color: var(--white);
+}

@@ -1,0 +1,9 @@
+::part(checkbox-wrapper) {
+  display: flex;
+  align-items: center;
+  margin: 8px 0;
+}
+
+::part(checkbox) {
+  align-self: flex-start;
+}
